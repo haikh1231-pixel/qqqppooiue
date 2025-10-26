@@ -1,0 +1,159 @@
+{
+  "compiler": {
+    "version": "0.8.26+commit.8a97fa7a"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "initialMessage",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "string",
+            "name": "oldMessage",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "internalType": "string",
+            "name": "newMessage",
+            "type": "string"
+          }
+        ],
+        "name": "MessageUpdated",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+      },
+      {
+        "inputs": [],
+        "name": "getMessage",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "newMessage",
+            "type": "string"
+          }
+        ],
+        "name": "updateMessage",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "title": "ABC - Simple Message Storage Contract",
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "getMessage()": {
+          "notice": "Returns the current stored message"
+        },
+        "transferOwnership(address)": {
+          "notice": "Transfer ownership to another address"
+        },
+        "updateMessage(string)": {
+          "notice": "Updates the stored message (only owner)"
+        }
+      },
+      "notice": "Allows the owner to set and get a message.",
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "abc.sol": "ABC"
+    },
+    "evmVersion": "cancun",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "remappings": []
+  },
+  "sources": {
+    "abc.sol": {
+      "keccak256": "0x1d04886031b6572770c7e659ca71371afe5caf39efe8727e6d94ef1b34248a70",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://4cc706cae7908a7f1977835ae6d894b48f14ae7001b00d6d99c5966b500f2d29",
+        "dweb:/ipfs/QmQNJFSKGf1hYe5c2W46fnncaMYdJfCieKm3zCZN1BWwcz"
+      ]
+    }
+  },
+  "version": 1
+}

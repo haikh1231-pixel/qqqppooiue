@@ -1,0 +1,117 @@
+{
+  "compiler": {
+    "version": "0.8.26+commit.8a97fa7a"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "int256",
+            "name": "startValue",
+            "type": "int256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "newValue",
+            "type": "int256"
+          }
+        ],
+        "name": "CounterChanged",
+        "type": "event"
+      },
+      {
+        "inputs": [],
+        "name": "decrement",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getCounter",
+        "outputs": [
+          {
+            "internalType": "int256",
+            "name": "",
+            "type": "int256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "increment",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "title": "XYZ - Simple Counter Contract",
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "decrement()": {
+          "notice": "Decrement the counter by 1"
+        },
+        "getCounter()": {
+          "notice": "Get current counter value"
+        },
+        "increment()": {
+          "notice": "Increment the counter by 1"
+        }
+      },
+      "notice": "Anyone can increment or decrement the counter",
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "xyz.sol": "XYZ"
+    },
+    "evmVersion": "cancun",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "remappings": []
+  },
+  "sources": {
+    "abc.sol": {
+      "keccak256": "0x1d04886031b6572770c7e659ca71371afe5caf39efe8727e6d94ef1b34248a70",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://4cc706cae7908a7f1977835ae6d894b48f14ae7001b00d6d99c5966b500f2d29",
+        "dweb:/ipfs/QmQNJFSKGf1hYe5c2W46fnncaMYdJfCieKm3zCZN1BWwcz"
+      ]
+    },
+    "xyz.sol": {
+      "keccak256": "0xbee7a50734deffeba2194669f023353baffc28c78962d39e1e161456d0299e62",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://21c148b95e11e6769f645515f854ef3905b28934c004b0fdc49e1e5e0803f6ac",
+        "dweb:/ipfs/QmQNJFSKGf1hYe5c2W46fnncaMYdJfCieKm3zCZN1BWwcz"
+      ]
+    }
+  },
+  "version": 1
+}

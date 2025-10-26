@@ -1,0 +1,97 @@
+{
+  "compiler": {
+    "version": "0.8.26+commit.8a97fa7a"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "sender",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "oldValue",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "newValue",
+            "type": "uint256"
+          }
+        ],
+        "name": "ValueChanged",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_newValue",
+            "type": "uint256"
+          }
+        ],
+        "name": "setValue",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "value",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "EventExample.sol": "EventExample"
+    },
+    "evmVersion": "cancun",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "remappings": []
+  },
+  "sources": {
+    "EventExample.sol": {
+      "keccak256": "0xb2b70ec9b07ea9b990dd7fe6441afb82b6a14ef66f5319dbc48aeedac9df284f",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://86cd4cc092b4ac69aa75a9ef2bb196f73e819161df589d8857c088ce0a596af3",
+        "dweb:/ipfs/QmXAiWfhqkan4XaDnosc4H1foBcHSztSzTht3CojaGQcqz"
+      ]
+    }
+  },
+  "version": 1
+}
